@@ -32,6 +32,8 @@ h4 {
   letter-spacing: 2px;
 }
 
+/*************Media Queries****************/
+
 /**************** header **********************/
 
 header {
@@ -59,42 +61,6 @@ header nav a:hover {
 }
 
 /****************** cta ********************/
-
-@media (max-width: 800px) {
-  .cta-image {
-    display: none;
-  }
-
-  header {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    width: 100%;
-  }
-
-  header img {
-    padding: 20px 0;
-  }
-
-  .container {
-    width: 95%;
-  }
-
-  nav {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .cta-text {
-    display: flex;
-    align-items: flext-start;
-  }
-
-  footer {
-    margin-bottom: 20px;
-  }
-}
 
 .cta {
   display: flex;
@@ -223,4 +189,100 @@ footer {
 .copyright {
   display: flex;
   justify-content: center;
+}
+
+@media (max-width: 800px) {
+  .cta-image {
+    display: none;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 100%;
+  }
+
+  header img {
+    padding: 20px 0;
+  }
+
+  .container {
+    width: 95%;
+  }
+
+  nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .cta-text {
+    display: flex;
+  }
+
+  footer {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+  }
+
+  body {
+    width: 100%;
+  }
+
+  header {
+    padding: 0;
+    margin: 0;
+  }
+  header nav {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  header nav a {
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid grey;
+    margin: 0;
+    width: 100%;
+    padding: 12px 0;
+  }
+
+  .cta {
+    justify-content: center;
+  }
+
+  .top-content .text-content {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .top-content {
+    flex-direction: column;
+  }
+
+  .text-content {
+    width: 100%;
+    padding: 0;
+  }
+
+  .bottom-content {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .bottom-content .text-content {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+  }
 }
