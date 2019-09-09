@@ -32,7 +32,7 @@ h4 {
   letter-spacing: 2px;
 }
 
-/* header */
+/**************** header **********************/
 
 header {
   display: flex;
@@ -58,12 +58,48 @@ header nav a:hover {
   text-decoration: none;
 }
 
-/* cta */
+/****************** cta ********************/
+
+@media (max-width: 800px) {
+  .cta-image {
+    display: none;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 100%;
+  }
+
+  header img {
+    padding: 20px 0;
+  }
+
+  .container {
+    width: 95%;
+  }
+
+  nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .cta-text {
+    display: flex;
+    align-items: flext-start;
+  }
+
+  footer {
+    margin-bottom: 20px;
+  }
+}
 
 .cta {
   display: flex;
   justify-content: space-evenly;
-  margin-top: 80px;
+  margin-top: 40px;
 }
 
 .cta-text {
@@ -84,11 +120,7 @@ header nav a:hover {
   border: 1px solid black;
   cursor: pointer;
   width: 170px;
-  height: 50px;
-}
-
-.middle-img {
-  width: 100%;
+  height: 40px;
 }
 
 .cta .cta-text button:hover {
@@ -96,13 +128,12 @@ header nav a:hover {
   color: white;
 }
 
-.main-content {
-}
+/************** Top Content **************/
 
 .top-content {
   display: flex;
   justify-content: space-between;
-  border-top: 1px solid black;
+  border-top: 2px solid black;
   padding: 10px 0;
   margin-top: 100px;
 }
@@ -113,8 +144,11 @@ header nav a:hover {
   flex-direction: column;
 }
 
-.main-content img {
+.middle-img {
+  width: 100%;
 }
+
+/*************** Bottom Content ***************/
 
 .bottom-content .text-content {
   width: 30%;
@@ -132,9 +166,10 @@ header nav a:hover {
 
 footer {
   font-size: 14px;
+  text-align: center;
 }
 
-/* Services Page */
+/******************************* Services Page ******************************/
 
 .topImage {
   width: 100%;
@@ -151,9 +186,6 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-.services {
 }
 
 .firstRow {
