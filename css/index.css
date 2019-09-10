@@ -1,3 +1,288 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+* {
+}
+
+.container {
+  width: 85%;
+  margin: auto;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+}
+
+h4 {
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+/*************Media Queries****************/
+
+/**************** header **********************/
+
+header {
+  display: flex;
+  justify-content: space-around;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  text-decoration: none;
+}
+
+header nav a {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  text-decoration: none;
+  color: grey;
+}
+
+header nav a:hover {
+  text-decoration: none;
+}
+
+/****************** cta ********************/
+
+.cta {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 40px;
+}
+
+.cta-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cta-text h1 {
+  font-size: 70px;
+  text-align: center;
+}
+
+.cta .cta-text button {
+  background: white;
+  font-size: 17px;
+  border: 1px solid black;
+  cursor: pointer;
+  width: 170px;
+  height: 40px;
+}
+
+.cta .cta-text button:hover {
+  background: black;
+  color: white;
+}
+
+/************** Top Content **************/
+
+.top-content {
+  display: flex;
+  justify-content: space-between;
+  border-top: 2px solid black;
+  padding: 10px 0;
+  margin-top: 100px;
+}
+
+.top-content .text-content {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+}
+
+.middle-img {
+  width: 100%;
+}
+
+/*************** Bottom Content ***************/
+
+.bottom-content .text-content {
+  width: 30%;
+}
+
+.bottom-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.contact {
+  border-top: 1px solid black;
+}
+
+footer {
+  font-size: 14px;
+  text-align: center;
+}
+
+/******************************* Services Page ******************************/
+
+.topImage {
+  width: 100%;
+}
+
+.topImage img {
+  display: flex;
+  justify-content: center;
+  width: 95%;
+}
+
+.topServices {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.firstRow {
+  display: flex;
+  justify-content: space-around;
+}
+
+.secondRow {
+  display: flex;
+  justify-content: space-around;
+}
+
+.thirdRow {
+  display: flex;
+  justify-content: space-around;
+}
+
+.serviceBox {
+  width: 45%;
+  border: 2px solid black;
+  padding: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.bottomRow {
+  display: flex;
+  justify-content: center;
+}
+
+.serviceFacts {
+  width: 60%;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 800px) {
+  .cta-image {
+    display: none;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 100%;
+  }
+
+  header img {
+    padding: 20px 0;
+  }
+
+  .container {
+    width: 95%;
+  }
+
+  nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .cta-text {
+    display: flex;
+  }
+
+  footer {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+  }
+
+  body {
+    width: 100%;
+    margin: 0;
+  }
+
+  .serviceMobile {
+    border-top: 1px solid grey;
+  }
+
+  header {
+    padding: 0;
+  }
+  header nav {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  header nav a {
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid grey;
+    margin: 0;
+    width: 100%;
+    padding: 12px 0;
+  }
+
+  .cta {
+    justify-content: center;
+  }
+
+  .top-content .text-content {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .top-content {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .bottom-content {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .bottom-content .text-content {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+  }
+}
